@@ -279,9 +279,7 @@ int main(void)
   SX1278_LoRaEntryRx(&SX1278,16, 2000);
   while (1)
   {
-		
-
-	if(flag == 1){
+//	if(flag == 1){
     	Read_temp();
       for(int i = 0; i<5;i++){
 		read_SR04();
@@ -348,7 +346,8 @@ int main(void)
 	  flag = 0;
 		__HAL_TIM_SetCounter(&htim2,0);
 		time_reset =0;
-	}// end if
+		
+	//}// end if
 	
 	
 	if (__HAL_TIM_GetCounter(&htim2)>=60000){
@@ -446,7 +445,7 @@ void HAL_TIM_IC_CaptureCallback (TIM_HandleTypeDef *htim){
 				diff = (0xffff - cap1) + cap2;
 			}// end else if
 
-			distance = (diff*0.343)/2 + 20;
+			distance = (diff*0.343)/2 + 45;
 //		 tam = diff/5.8; //(diff*0.34/2);//
 //		 distance = tam + 25;
 //		 if(tam < 260){
