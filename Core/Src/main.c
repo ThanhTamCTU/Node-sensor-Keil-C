@@ -58,11 +58,11 @@ SX1278_hw_t SX1278_hw;
 SX1278_t SX1278;
 int master;
 int ret;
-uint8_t buffer[64];
+char buffer[64];
 int message_length;
 int ret_sent;
 int ret;
-uint8_t buffsent[64];
+char buffsent[64];
 int get_adc;
 uint8_t flag =0;
 uint8_t Presence =0;
@@ -72,6 +72,7 @@ uint16_t TEMP =0 ;
 uint8_t Temperature =0;
 float ADC =0;
 uint8_t Percent_humidity =0;
+uint16_t time_reset =0;
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -251,9 +252,11 @@ int main(void)
   MX_I2C1_Init();
   MX_SPI1_Init();
   MX_ADC1_Init();
+  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
 //  HAL_TIM_Base_Start(&htim1);
   HAL_TIM_IC_Start_IT(&htim1, TIM_CHANNEL_1);
+	HAL_TIM_Base_Start(&htim2);
 	HAL_ADC_Start(&hadc1);
   SSD1306_Init ();
 
@@ -302,10 +305,38 @@ int main(void)
 			ADC= ADC + HAL_ADC_GetValue(&hadc1);
 		}
 		Percent_humidity = 100 - ((float)ADC *100)/(3980*10);	
-	  SSD1306_GotoXY (10,10);  // goto 10, 10
-	  SSD1306_Puts ("Distance", &Font_11x18, 1);  // print Hello
-	  SSD1306_GotoXY (30, 30);
-	  SSD1306_Puts (t, &Font_16x26, 1);
+	  SSD1306_GotoXY (10,20);  // goto 10, 10
+	  SSD1306_Puts ("Distance:", &Font_7x10, 1);  
+	  SSD1306_Puts (t, &Font_7x10, 1);
+		SSD1306_Puts ("           ", &Font_7x10, 1);
+		
+		char temp_str[3];
+		sprintf ( temp_str,"%d",Temperature);
+		SSD1306_GotoXY (10,33);  // goto 10, 10
+	  SSD1306_Puts ("Temp:", &Font_7x10, 1);  
+	  SSD1306_Puts (temp_str, &Font_7x10, 1);
+		
+		char humidity_str[3];
+		if ( Percent_humidity < 100 ){
+			sprintf ( humidity_str,"%d",Percent_humidity);
+			humidity_str[2] =' ';
+			SSD1306_GotoXY (10,46);  // goto 10, 10
+			SSD1306_Puts ("Hump:", &Font_7x10, 1);  
+			SSD1306_Puts (humidity_str, &Font_7x10, 1);
+			SSD1306_Puts ("   ", &Font_7x10, 1);
+		}else {
+			sprintf ( humidity_str,"%d",Percent_humidity);
+			SSD1306_GotoXY (10,46);  // goto 10, 10
+			SSD1306_Puts ("Hump:", &Font_7x10, 1);  
+			SSD1306_Puts (humidity_str, &Font_7x10, 1);
+		}// end if
+		
+		
+		
+
+		SSD1306_GotoXY (100,20);  // goto 10, 10
+	  SSD1306_Puts ("   ", &Font_7x10, 1);  
+		
 	  SSD1306_UpdateScreen();
 	  message_length = sprintf(buffsent, "N1:%d:%d:%d", distance,Temperature,Percent_humidity);
 
@@ -315,11 +346,20 @@ int main(void)
 	  }
 	  SX1278_LoRaEntryRx(&SX1278,16, 1000);
 	  flag = 0;
+		__HAL_TIM_SetCounter(&htim2,0);
+		time_reset =0;
 	}// end if
 	
 	
-	HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_5);
-	HAL_Delay(1000);
+	if (__HAL_TIM_GetCounter(&htim2)>=60000){
+		time_reset ++;
+		if (time_reset > 8000) HAL_NVIC_SystemReset();
+	}// end if 
+	
+	
+	
+	
+
 
     /* USER CODE END WHILE */
 
@@ -365,7 +405,7 @@ void SystemClock_Config(void)
     Error_Handler();
   }
   PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_ADC;
-  PeriphClkInit.AdcClockSelection = RCC_ADCPCLK2_DIV2;
+  PeriphClkInit.AdcClockSelection = RCC_ADCPCLK2_DIV4;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {
     Error_Handler();

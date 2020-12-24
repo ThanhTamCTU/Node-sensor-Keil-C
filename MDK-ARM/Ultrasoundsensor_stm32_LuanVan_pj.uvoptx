@@ -195,6 +195,21 @@
           <WinNumber>1</WinNumber>
           <ItemText>ret_sent,0x0A</ItemText>
         </Ww>
+        <Ww>
+          <count>9</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>TIM2-&gt;CNT,0x0A</ItemText>
+        </Ww>
+        <Ww>
+          <count>10</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>time_reset,0x0A</ItemText>
+        </Ww>
+        <Ww>
+          <count>11</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>t</ItemText>
+        </Ww>
       </WatchWindow1>
       <WatchWindow2>
         <Ww>
