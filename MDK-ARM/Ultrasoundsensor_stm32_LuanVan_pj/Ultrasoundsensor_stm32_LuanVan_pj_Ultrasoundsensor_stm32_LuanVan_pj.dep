@@ -1,14 +1,14 @@
 Dependencies for Project 'Ultrasoundsensor_stm32_LuanVan_pj', Target 'Ultrasoundsensor_stm32_LuanVan_pj': (DO NOT MODIFY !)
-F (startup_stm32f103xb.s)(0x5FE405C4)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include--pd "__UVISION_VERSION SETA 527" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list startup_stm32f103xb.lst --xref -o ultrasoundsensor_stm32_luanvan_pj\startup_stm32f103xb.o --depend ultrasoundsensor_stm32_luanvan_pj\startup_stm32f103xb.d)
+F (startup_stm32f103xb.s)(0x5FE698FE)(--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork --pd "__MICROLIB SETA 1"-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include--pd "__UVISION_VERSION SETA 527" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"--list startup_stm32f103xb.lst --xref -o ultrasoundsensor_stm32_luanvan_pj\startup_stm32f103xb.o --depend ultrasoundsensor_stm32_luanvan_pj\startup_stm32f103xb.d)
 F (..\Core\Src\SX1278.c)(0x5FC9722E)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\sx1278.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\sx1278.crf --depend ultrasoundsensor_stm32_luanvan_pj\sx1278.d)
 I (../Core/Inc/SX1278.h)(0x5FC9722E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x599EDB3E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599EDB3E)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599EDB3C)
-I (../Core/Inc/gpio.h)(0x5FE405C0)
-I (../Core/Inc/main.h)(0x5FE405C1)
+I (../Core/Inc/gpio.h)(0x5FE698FB)
+I (../Core/Inc/main.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -36,11 +36,11 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
-I (../Core/Inc/spi.h)(0x5FE405C1)
+I (../Core/Inc/spi.h)(0x5FE698FB)
 F (..\Core\Src\fonts.c)(0x5FC9722E)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\fonts.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\fonts.crf --depend ultrasoundsensor_stm32_luanvan_pj\fonts.d)
 I (../Core/Inc/fonts.h)(0x5FC9722E)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -73,7 +73,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599EDB3C)
 F (..\Core\Src\ssd1306.c)(0x5FC9722E)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\ssd1306.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\ssd1306.crf --depend ultrasoundsensor_stm32_luanvan_pj\ssd1306.d)
 I (../Core/Inc/ssd1306.h)(0x5FC9722E)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -105,10 +105,10 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
 I (../Core/Inc/fonts.h)(0x5FC9722E)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599EDB3C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599EDB3C)
-F (../Core/Src/main.c)(0x5FE459CD)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\main.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\main.crf --depend ultrasoundsensor_stm32_luanvan_pj\main.d)
-I (../Core/Inc/main.h)(0x5FE405C1)
+F (../Core/Src/main.c)(0x5FE698FC)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\main.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\main.crf --depend ultrasoundsensor_stm32_luanvan_pj\main.d)
+I (../Core/Inc/main.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -137,11 +137,11 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
-I (../Core/Inc/adc.h)(0x5FE405C0)
-I (../Core/Inc/i2c.h)(0x5FE405C1)
-I (../Core/Inc/spi.h)(0x5FE405C1)
-I (../Core/Inc/tim.h)(0x5FE405C1)
-I (../Core/Inc/gpio.h)(0x5FE405C0)
+I (../Core/Inc/adc.h)(0x5FE698FB)
+I (../Core/Inc/i2c.h)(0x5FE698FB)
+I (../Core/Inc/spi.h)(0x5FE698FB)
+I (../Core/Inc/tim.h)(0x5FE698FB)
+I (../Core/Inc/gpio.h)(0x5FE698FB)
 I (../Core/Inc/ssd1306.h)(0x5FC9722E)
 I (../Core/Inc/fonts.h)(0x5FC9722E)
 I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x599EDB3C)
@@ -149,11 +149,11 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x599EDB3C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x599EDB3C)
 I (../Core/Inc/SX1278.h)(0x5FC9722E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599EDB3E)
-F (../Core/Src/gpio.c)(0x5FE405C0)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\gpio.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\gpio.crf --depend ultrasoundsensor_stm32_luanvan_pj\gpio.d)
-I (../Core/Inc/gpio.h)(0x5FE405C0)
-I (../Core/Inc/main.h)(0x5FE405C1)
+F (../Core/Src/gpio.c)(0x5FE698FA)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\gpio.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\gpio.crf --depend ultrasoundsensor_stm32_luanvan_pj\gpio.d)
+I (../Core/Inc/gpio.h)(0x5FE698FB)
+I (../Core/Inc/main.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -182,11 +182,11 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
-F (../Core/Src/adc.c)(0x5FE405C0)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\adc.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\adc.crf --depend ultrasoundsensor_stm32_luanvan_pj\adc.d)
-I (../Core/Inc/adc.h)(0x5FE405C0)
-I (../Core/Inc/main.h)(0x5FE405C1)
+F (../Core/Src/adc.c)(0x5FE698FB)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\adc.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\adc.crf --depend ultrasoundsensor_stm32_luanvan_pj\adc.d)
+I (../Core/Inc/adc.h)(0x5FE698FB)
+I (../Core/Inc/main.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -215,11 +215,11 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
-F (../Core/Src/i2c.c)(0x5FE405C0)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\i2c.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\i2c.crf --depend ultrasoundsensor_stm32_luanvan_pj\i2c.d)
-I (../Core/Inc/i2c.h)(0x5FE405C1)
-I (../Core/Inc/main.h)(0x5FE405C1)
+F (../Core/Src/i2c.c)(0x5FE698FB)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\i2c.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\i2c.crf --depend ultrasoundsensor_stm32_luanvan_pj\i2c.d)
+I (../Core/Inc/i2c.h)(0x5FE698FB)
+I (../Core/Inc/main.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -248,11 +248,11 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
-F (../Core/Src/spi.c)(0x5FE405C1)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\spi.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\spi.crf --depend ultrasoundsensor_stm32_luanvan_pj\spi.d)
-I (../Core/Inc/spi.h)(0x5FE405C1)
-I (../Core/Inc/main.h)(0x5FE405C1)
+F (../Core/Src/spi.c)(0x5FE698FB)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\spi.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\spi.crf --depend ultrasoundsensor_stm32_luanvan_pj\spi.d)
+I (../Core/Inc/spi.h)(0x5FE698FB)
+I (../Core/Inc/main.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -281,11 +281,11 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
-F (../Core/Src/tim.c)(0x5FE405C1)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\tim.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\tim.crf --depend ultrasoundsensor_stm32_luanvan_pj\tim.d)
-I (../Core/Inc/tim.h)(0x5FE405C1)
-I (../Core/Inc/main.h)(0x5FE405C1)
+F (../Core/Src/tim.c)(0x5FE698FB)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\tim.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\tim.crf --depend ultrasoundsensor_stm32_luanvan_pj\tim.d)
+I (../Core/Inc/tim.h)(0x5FE698FB)
+I (../Core/Inc/main.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -314,10 +314,10 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
-F (../Core/Src/stm32f1xx_it.c)(0x5FE405C1)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_it.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_it.crf --depend ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_it.d)
-I (../Core/Inc/main.h)(0x5FE405C1)
+F (../Core/Src/stm32f1xx_it.c)(0x5FE698FB)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_it.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_it.crf --depend ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_it.d)
+I (../Core/Inc/main.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -346,13 +346,13 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_spi.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
-I (../Core/Inc/stm32f1xx_it.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_it.h)(0x5FE698FC)
 I (../Core/Inc/SX1278.h)(0x5FC9722E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x599EDB3E)
-F (../Core/Src/stm32f1xx_hal_msp.c)(0x5FE405C1)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_msp.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_msp.crf --depend ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_msp.d)
-I (../Core/Inc/main.h)(0x5FE405C1)
+F (../Core/Src/stm32f1xx_hal_msp.c)(0x5FE698FC)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_msp.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_msp.crf --depend ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_msp.d)
+I (../Core/Inc/main.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -383,7 +383,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.c)(0x5F9B7FDA)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_gpio_ex.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_gpio_ex.crf --depend ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_gpio_ex.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -414,7 +414,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.c)(0x5F9B7FDA)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_adc.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_adc.crf --depend ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_adc.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -445,7 +445,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.c)(0x5F9B7FDA)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_adc_ex.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_adc_ex.crf --depend ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_adc_ex.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -476,7 +476,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c)(0x5F9B7FDA)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal.crf --depend ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -507,7 +507,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.c)(0x5F9B7FDA)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_rcc.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_rcc.crf --depend ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_rcc.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -538,7 +538,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.c)(0x5F9B7FDA)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_rcc_ex.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_rcc_ex.crf --depend ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_rcc_ex.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -569,7 +569,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.c)(0x5F9B7FDA)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_gpio.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_gpio.crf --depend ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_gpio.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -600,7 +600,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.c)(0x5F9B7FDA)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_dma.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_dma.crf --depend ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_dma.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -631,7 +631,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.c)(0x5F9B7FDA)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_cortex.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_cortex.crf --depend ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_cortex.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -662,7 +662,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.c)(0x5F9B7FDA)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_pwr.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_pwr.crf --depend ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_pwr.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -693,7 +693,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.c)(0x5F9B7FDA)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_flash.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_flash.crf --depend ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_flash.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -724,7 +724,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.c)(0x5F9B7FDA)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_flash_ex.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_flash_ex.crf --depend ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_flash_ex.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -755,7 +755,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_exti.c)(0x5F9B7FDA)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_exti.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_exti.crf --depend ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_exti.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -786,7 +786,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.c)(0x5F9B7FDA)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_i2c.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_i2c.crf --depend ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_i2c.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -817,7 +817,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_spi.c)(0x5F9B7FDA)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_spi.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_spi.crf --depend ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_spi.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -848,7 +848,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.c)(0x5F9B7FDA)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_tim.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_tim.crf --depend ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_tim.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -879,7 +879,7 @@ I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h)(0x5F9B7FDA)
 F (../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.c)(0x5F9B7FDA)(--c99 -c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include-I.\RTE\_Ultrasoundsensor_stm32_LuanVan_pj-IC:\Users\User\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include-IC:\Users\User\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB-o ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_tim_ex.o --omf_browse ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_tim_ex.crf --depend ultrasoundsensor_stm32_luanvan_pj\stm32f1xx_hal_tim_ex.d)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h)(0x5F9B7FD9)
@@ -918,7 +918,7 @@ I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x5F9B7F94)
 I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x5F9B7F94)
 I (../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h)(0x5F9B7FD9)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h)(0x5F9B7FD9)
-I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE405C1)
+I (../Core/Inc/stm32f1xx_hal_conf.h)(0x5FE698FC)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h)(0x5F9B7FDA)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h)(0x5F9B7FD9)
 I (../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x5F9B7FD9)

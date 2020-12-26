@@ -35,6 +35,8 @@ extern int ret_sent;
 extern uint8_t buffsent[64];
 extern int flag;
 extern int ret;
+extern int time_reset;
+extern uint8_t enable_sleep;
 /* USER CODE END TD */
 
 /* Private define ------------------------------------------------------------*/
@@ -218,8 +220,12 @@ void EXTI2_IRQHandler(void)
    SX1278_read(&SX1278, (uint8_t *) buffer, ret);
    if ( buffer[0]=='W'&&buffer[1]=='L'){
    			  flag=1;
-   			}//end if
-
+   }
+/*	 else{
+		 HAL_PWR_EnterSLEEPMode(PWR_MAINREGULATOR_ON,PWR_SLEEPENTRY_WFI);
+		 HAL_ResumeTick();
+	 }// end else
+*/
   /* USER CODE END EXTI2_IRQn 1 */
 }
 

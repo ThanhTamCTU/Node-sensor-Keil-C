@@ -73,6 +73,7 @@ uint8_t Temperature =0;
 float ADC =0;
 uint8_t Percent_humidity =0;
 uint16_t time_reset =0;
+uint8_t enable_sleep =0;
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -252,11 +253,11 @@ int main(void)
   MX_I2C1_Init();
   MX_SPI1_Init();
   MX_ADC1_Init();
-  MX_TIM2_Init();
   /* USER CODE BEGIN 2 */
 //  HAL_TIM_Base_Start(&htim1);
   HAL_TIM_IC_Start_IT(&htim1, TIM_CHANNEL_1);
-	HAL_TIM_Base_Start(&htim2);
+//	HAL_TIM_Base_Start(&htim2);
+//	HAL_TIM_IC_Start_IT(&htim2, TIM_CHANNEL_1);
 	HAL_ADC_Start(&hadc1);
   SSD1306_Init ();
 
@@ -275,19 +276,75 @@ int main(void)
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-
   SX1278_LoRaEntryRx(&SX1278,16, 2000);
+	
+	Read_temp();
+		for(int i = 0; i<5;i++){
+			read_SR04();
+			HAL_Delay(70);
+      }
+	  if (distance < 100){
+		  sprintf(t,"%d",distance);
+		  t[2]=' ';
+		  t[3]=' ';
+	  }else if(distance >=100 && distance < 1000){
+		  sprintf(t,"%d",distance);
+		  t[3]=' ';
+	  }else {
+		  sprintf(t,"%d",distance);
+	  }
+		ADC = 0;
+		for( int i =0; i<10;i++){
+			ADC= ADC + HAL_ADC_GetValue(&hadc1);
+		}
+		Percent_humidity = 100 - ((float)ADC *100)/(3980*10);	
+	  SSD1306_GotoXY (10,20);  // goto 10, 10
+	  SSD1306_Puts ("Distance:", &Font_7x10, 1);  
+	  SSD1306_Puts (t, &Font_7x10, 1);
+		SSD1306_Puts ("           ", &Font_7x10, 1);
+		
+		char temp_str[3];
+		sprintf ( temp_str,"%d",Temperature);
+		SSD1306_GotoXY (10,33);  // goto 10, 10
+	  SSD1306_Puts ("Temp:", &Font_7x10, 1);  
+	  SSD1306_Puts (temp_str, &Font_7x10, 1);
+		
+		char humidity_str[3];
+		if ( Percent_humidity < 100 ){
+			sprintf ( humidity_str,"%d",Percent_humidity);
+			humidity_str[2] =' ';
+			SSD1306_GotoXY (10,46);  // goto 10, 10
+			SSD1306_Puts ("Hump:", &Font_7x10, 1);  
+			SSD1306_Puts (humidity_str, &Font_7x10, 1);
+			SSD1306_Puts ("   ", &Font_7x10, 1);
+		}else {
+			sprintf ( humidity_str,"%d",Percent_humidity);
+			SSD1306_GotoXY (10,46);  // goto 10, 10
+			SSD1306_Puts ("Hump:", &Font_7x10, 1);  
+			SSD1306_Puts (humidity_str, &Font_7x10, 1);
+		}// end if
+		
+		
+		
+
+		SSD1306_GotoXY (100,20);  // goto 10, 10
+	  SSD1306_Puts ("   ", &Font_7x10, 1);  
+		
+	  SSD1306_UpdateScreen();
+	
+	
+	
+	
   while (1)
   {
-//	if(flag == 1){
-    	Read_temp();
-      for(int i = 0; i<5;i++){
-		read_SR04();
-//		sum_distance = sum_distance + distance;
-		HAL_Delay(70);
+	if(flag == 1){
+		HAL_ResumeTick();	
+		enable_sleep = 1;
+		Read_temp();
+		for(int i = 0; i<5;i++){
+			read_SR04();
+			HAL_Delay(70);
       }
-//      distance = sum_distance/3 ;
-//      sum_distance=0;
 	  if (distance < 100){
 		  sprintf(t,"%d",distance);
 		  t[2]=' ';
@@ -344,26 +401,29 @@ int main(void)
 	  }
 	  SX1278_LoRaEntryRx(&SX1278,16, 1000);
 	  flag = 0;
-		__HAL_TIM_SetCounter(&htim2,0);
+	//	__HAL_TIM_SetCounter(&htim2,0);
 		time_reset =0;
+		HAL_SuspendTick();
+		HAL_PWR_EnterSLEEPMode(PWR_MAINREGULATOR_ON,PWR_SLEEPENTRY_WFI);
 		
-	//}// end if
+	}// end if ( flag)
 	
-	
+/*	
 	if (__HAL_TIM_GetCounter(&htim2)>=60000){
 		time_reset ++;
 		if (time_reset > 8000) HAL_NVIC_SystemReset();
 	}// end if 
-	
-	
-	
-	
+*/	
+	if (enable_sleep){
+		HAL_PWR_EnterSLEEPMode(PWR_MAINREGULATOR_ON,PWR_SLEEPENTRY_WFI);
+		HAL_SuspendTick();
+	}// end if
 
 
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-  }
+  }// end while(1)
   /* USER CODE END 3 */
 }
 
@@ -397,14 +457,14 @@ void SystemClock_Config(void)
   RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
   RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
-  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
+  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV2;
 
   if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_1) != HAL_OK)
   {
     Error_Handler();
   }
   PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_ADC;
-  PeriphClkInit.AdcClockSelection = RCC_ADCPCLK2_DIV4;
+  PeriphClkInit.AdcClockSelection = RCC_ADCPCLK2_DIV2;
   if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
   {
     Error_Handler();
